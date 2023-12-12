@@ -11,8 +11,6 @@ function login() {
         id : id.value,
         pw : pw.value
     }
-
-    console.log(JSON.stringify(req))
     
     fetch("/login", {
         method: "POST",
@@ -23,6 +21,7 @@ function login() {
     })
     .then((res) => res.json())
     .then((res) => {
+        console.log(res)
         if (res.success) {
             location.href="/"
         } else {
