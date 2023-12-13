@@ -30,6 +30,7 @@ class User {
             UserStorage.generateUser(body)
             return { success: true }
         }
+        
     }
 }
 
