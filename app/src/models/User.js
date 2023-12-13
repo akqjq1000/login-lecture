@@ -28,6 +28,7 @@ class User {
         if (id) { return { successs: false, msg: "중복된 ID 입니다." } }
         else {
             UserStorage.generateUser(body)
+            return { success: true }
         }
     }
 }
