@@ -28,6 +28,14 @@ class UserStorage {
         }, {})
         return userInfo
     }
+    static generateUser(user) {
+        const users = this.#users
+        for ( let key in users) {
+            if (users.hasOwnProperty(key)) {
+                users[key].push(user[key]) 
+            }
+        }
+    }
 }
 
 module.exports = UserStorage

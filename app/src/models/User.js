@@ -20,6 +20,16 @@ class User {
         
        return {success: false, msg: "존재하지 않는 ID 입니다."}
     }
+
+    register() {
+        const body = this.body
+        const {id, _ } = UserStorage.getUserInfo(body.id)
+
+        if (id) { return { successs: false, msg: "중복된 ID 입니다." } }
+        else {
+            UserStorage.generateUser(body)
+        }
+    }
 }
 
 module.exports = User

@@ -29,7 +29,7 @@
     font-size: 14px;
 }
 
-.form button {
+.form .btn {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
@@ -44,9 +44,9 @@
     cursor: pointer;
 }
 
-.form button:hover,
-.form button:active,
-.form button:focus {
+.form .btn:hover,
+.form .btn:active,
+.form .btn:focus {
     background: #43A047;
 }
 

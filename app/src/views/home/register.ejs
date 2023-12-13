@@ -8,17 +8,19 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/home/login.css">
+    <script src="/js/home/register.js" defer></script>
 </head>
 
 <body>
     <div class="login-page">
         <div class="form">
             <form class="register-form">
-                <input id="id" type="text" placeholder="name"/>
-                <input id="pw" type="password" placeholder="password"/>
-                <input id="name" type="text" placeholder="email address"/>
-                <button>create</button>
-                <p class="message">Already registered? <a href="#">Sign In</a></p>
+                <input id="id" type="text" placeholder="아이디"/>
+                <input id="name" type="text" placeholder="이름"/>
+                <input id="pw" type="password" placeholder="비밀번호"/>
+                <input id="pwCheck" type="password" placeholder="비밀번호 확인"/>
+                <p class="btn" id="register_btn">create</p>
+                <p class="message">Already registered? <a href="/login">Sign In</a></p>
               </form>
         </div>
     </div>
